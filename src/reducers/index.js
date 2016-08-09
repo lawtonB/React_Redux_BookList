@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
 import BooksReducer from './reducer_books';
+import ActiveBook from './reducer_active_book';
 
-//reducer adds key books to global application state using reducer_books.js
+//reducer adds keys books/activeBook to global application state 
 const rootReducer = combineReducers({
-books: BooksReducer
+books: BooksReducer,
+activeBook: ActiveBook
 });
 
 export default rootReducer;
